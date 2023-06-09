@@ -7,7 +7,6 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import logo from "../images/linkedin.png"
-import profilePic from "../images/profile.png"
 import HeaderOption from './HeaderOption';
 import { useDispatch } from 'react-redux';
 import { logout } from '../features/userSlice';
@@ -38,7 +37,7 @@ function Header() {
           <HeaderOption Icon={NotificationsIcon} title="Notifications"/>
           <HeaderOption Icon={ChatIcon} title="Chat"/>
           <HeaderOption 
-          avatar={profilePic} 
+          avatar={true}
           title="Me" 
           onClick={logOut}
           />
